@@ -1,0 +1,57 @@
+@use "../../styles/variable" as *;
+
+.cta__section {
+  padding: 50px 0;
+  background: linear-gradient(
+    to left top,
+    #ff2c9c,
+    #ff287b,
+    #ff395a,
+    #ff5137,
+    #ff6a00
+  ) !important;
+  @media ($tablet) {
+    padding: 60px 0;
+  }
+  @media ($desktop) {
+    padding: 80px 0;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @media ($tablet) {
+      flex-direction: row;
+    }
+
+    &__text {
+      &__title {
+        margin-bottom: 20px;
+        font-weight: 800;
+        color: #fff;
+        @media ($tablet) {
+          text-align: start;
+        }
+      }
+
+      &__description {
+        text-align: center;
+        color: #fff;
+        opacity: 0.9;
+        font-size: 18px;
+        margin-bottom: 18px;
+        @media ($tablet) {
+          text-align: start;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 5px;
+      font-size: 50px;
+      font-weight: 800;
+      color: #fff;
+    }
+  }
+}

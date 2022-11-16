@@ -1,0 +1,77 @@
+@use "../../styles/variable.scss" as *;
+
+.about__us__section {
+  padding: 50px 0;
+  @media ($desktop) {
+    padding: 100px 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media ($desktop) {
+      flex-direction: row;
+    }
+    &__thumbnail {
+      width: 100%;
+      padding: 0 12px;
+      @media ($desktop) {
+        width: 376px;
+        height: 576px;
+      }
+      @media ($large-screen) {
+        width: 536px;
+        height: 779px;
+      }
+      img {
+        
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__text {
+      max-width: 100%;
+      margin-top: 35px;
+      @media ($desktop) {
+        max-width: 506px;
+        padding-left: 42px;
+        margin-top: 0;
+      }
+      @media ($large-screen) {
+        max-width: 716px;
+      }
+      &__section__top {
+        margin: -5px 0 18px;
+        &__title {
+          font-size: 20px;
+          @media ($desktop) {
+            margin-bottom: 15px;
+          }
+          @media ($large-screen) {
+            font-size: 50px;
+          }
+        }
+        &__description {
+          max-width: 100%;
+          @media ($desktop) {
+            max-width: 650px;
+          }
+        }
+      }
+      &__section__bottom {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &__title {
+          margin-bottom: 8px;
+        }
+        &__description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

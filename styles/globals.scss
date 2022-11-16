@@ -1,0 +1,147 @@
+@use "variable" as *;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+   @media ($phone) {
+    max-width: 512px;
+  }
+  @media ($tablet) {
+    max-width: 768px;
+  }
+
+  @media ($desktop) {
+    max-width: 912px;
+  }
+
+  @media ($large-screen) {
+    max-width: 1440px;
+  }
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1,
+.h1 {
+  font-size: 30px;
+  font-family: $saira;
+  font-weight: $extra-weight-bold;
+  line-height: 36px;
+  color: $header;
+
+  @media ($tablet) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  @media ($desktop) {
+    font-size: 62px;
+    line-height: 75px;
+  }
+   
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  font-family: $saira;
+  font-weight: $weight-bold;
+  line-height: 36px;
+  color: $header;
+
+  @media ($tablet) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  @media ($desktop) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+   @media ($large-screen) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  font-family: $saira;
+  font-weight: $weight-semi-bold;
+  line-height: 28px;
+  color: $header;
+
+ 
+  @media ($desktop) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+   
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-family: $saira;
+  font-weight: $weight-semi-bold;
+  line-height: 24px;
+  color: $header;
+
+ 
+  @media ($desktop) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+h5,
+.h5 {
+   font-size: 14px;
+  font-family: $open_sans;
+  font-weight: $weight-semi-bold;
+  line-height: 24px;
+  color: $s-header;
+
+ 
+  @media ($desktop) {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+p,
+.p {
+  font-size: 16px;
+  font-family: $inter;
+  font-weight: $weight-normal;
+  line-height: 27px;
+  color: $para;
+}
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

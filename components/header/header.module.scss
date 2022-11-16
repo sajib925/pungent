@@ -1,0 +1,187 @@
+@use "../../styles/variable" as *;
+
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+  width: 100%;
+  z-index: 999;
+  height: auto;
+  padding-top: 15px;
+transition: all ease-in-out 0.5s;
+  .nav {
+    padding: 8px 0;
+    position: relative;
+  }
+
+  /*mobile nav button */
+
+  .mobile_btn {
+    display: block;
+    @media ($tablet) {
+      display: none;
+    }
+    .mobile_bar {
+      padding: 10px;
+      .icon_bar {
+        width: 28px;
+        transition: all 0.3s;
+        background: $s-header;
+        height: 2px;
+        display: block;
+        transform-origin: 10% 90%;
+        &:nth-child(2) {
+          margin: 6px 0;
+        }
+      }
+    }
+    .close_mobile_bar {
+      .icon_bar:nth-child(2) {
+        // opacity: 0;
+        width: 0;
+        transition: all ease 0.5s;
+      }
+      .icon_bar:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: 10% 90%;
+        left: 4px;
+      }
+      .icon_bar:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+        left: 4px;
+      }
+    }
+  }
+
+  .navbar {
+    display: none;
+    transform: translateX(-1000px);
+    transition: all ease-in-out 0.5s;
+    @media ($tablet) {
+      display: block;
+      transform: translateX(0);
+    }
+  }
+  .navbar_open {
+    display: block;
+    position: absolute;
+    top: 50px;
+    transform: translateX(0);
+    width: 100%;
+    background-color: white;
+  }
+
+  .nav_links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media ($tablet) {
+      flex-direction: row;
+    }
+    .nav_item {
+      padding: 15px 12px;
+      list-style: none;
+      &:last-child {
+        display: none;
+        @media ($desktop) {
+          display: block;
+          padding: 0;
+        }
+        .nav_btn {
+          position: relative;
+          font-size: 14px;
+          font-weight: $weight-semi-bold;
+          border-radius: 50px;
+          padding: 13px 20px;
+          color: $white;
+          border: 1px solid $s-header;
+          line-height: 21px;
+          transition: all ease-in-out 0.5s;
+          &::before {
+            border-radius: 50px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              to left top,
+              $s-header,
+              #ff287b,
+              #ff395a,
+              #ff5137,
+              #ff6a00
+            );
+            z-index: -1;
+            transition: all 0.5s ease;
+          }
+          &:hover::before {
+            width: 0;
+          }
+          &:hover {
+            color: $s-header;
+            box-shadow: unset;
+            background-color: transparent;
+            border-color: $s-header;
+          }
+        }
+      } 
+      .nav_link {
+        position: relative;
+        font-size: 15px;
+        font-family: $inter;
+        color: $header;
+        font-weight: $weight-medium;
+        text-transform: capitalize;
+        padding: 0;
+        &::before {
+          bottom: -5px;
+          width: 0;
+          background: linear-gradient(
+            to left top,
+            #ff2c9c,
+            #ff287b,
+            #ff395a,
+            #ff5137,
+            #ff6a00
+          );
+          height: 3px;
+          transition: all 0.5s ease;
+          left: 1px;
+          content: "";
+          position: absolute;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+      .color{
+        color: white;
+      }
+      .nav_link_active {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.fixed__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  z-index: 999;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+  background-color: #fff !important;
+  transition: all ease-in-out 0.5s;
+}
