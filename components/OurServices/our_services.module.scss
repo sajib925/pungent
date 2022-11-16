@@ -2,7 +2,7 @@
 
 .our__services__section {
   padding: 100px 0 70px;
-  background-color: #f6f3f3;
+  background-color: $wBg;
   &__title {
     margin-bottom: 15px;
     text-align: center;
@@ -39,10 +39,10 @@
         font-size: 35px;
         text-align: center;
         border-radius: 100%;
-        color: #fff;
+        color: $white;
         display: inline-block;
         transition: all 0.5s ease;
-        background-color: #13c4a1;
+        background-color: $iconBg;
         display: flex;
         justify-content: center;
         align-items: center;

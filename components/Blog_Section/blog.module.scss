@@ -39,7 +39,7 @@
   &__items {
     &__item {
       margin-bottom: 30px;
-      background-color: #fff;
+      background-color: $body-bg;
       box-shadow: 0 15px 15px 0 rgb(0 0 0 / 6%);
 
       &__thumbnail {
@@ -64,8 +64,8 @@
           transition: all 0.5s ease;
           
           &__link {
-            background: #ff2c9c;
-            color: #fff;
+            background: $s-header;
+            color: $body-bg;
             padding: 9px 28px;
             display: block;
           }
@@ -76,7 +76,7 @@
         padding: 30px;
 
         &__date {
-          color: #ff2c9c;
+          color: $s-header;
           display: block;
           text-transform: uppercase;
           font-size: 14px;
@@ -89,7 +89,7 @@
             display: inline-block;
             transition: all 0.5s ease;
             &:hover {
-              color: #ff2c9c;
+              color: $s-header;
             }
           }
         }
@@ -97,7 +97,7 @@
           margin-bottom: 15px;
         }
         &__link {
-          color: #18181b;
+          color: $header;
           display: inline-block;
           position: relative;
           z-index: 1;
@@ -110,7 +110,7 @@
           &:focus,
           &:hover {
             outline: 0 !important;
-            color: #ff2c9c;
+            color: $s-header;
           }
 
           &::before {
@@ -121,7 +121,7 @@
             transform: translateY(-50%);
             width: 50px;
             height: 2px;
-            background: #18181b;
+            background: $header;
             z-index: -1;
             opacity: 0;
             visibility: hidden;

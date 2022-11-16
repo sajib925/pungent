@@ -2,7 +2,7 @@
 
 .our__works__section {
   padding: 50px 0;
-  background-color: #f6f3f3;
+  background-color: $wBg;
   @media ($tablet) {
     padding: 70px 0;
   }
@@ -66,7 +66,7 @@
             line-height: 19px;
             font-weight: 600;
             font-size: 13px;
-            color: #fff;
+            color: $white;
             display: inline-block;
             @media ($desktop) {
               font-size: 14px;
@@ -85,7 +85,7 @@
               font-size: 25px;
             }
             &__link {
-              color: #fff;
+              color: $white;
               z-index: 2;
               transition: all 0.5s ease;
               &:hover{

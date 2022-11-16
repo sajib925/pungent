@@ -10,7 +10,7 @@
   background-image: url(../../image/pages/page-banner1.jpg);
   &::before {
     content: "";
-    background-color: #18181b;
+    background-color: $header;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
   }
   &__title {
     margin: 0;
-    color: #fff;
+    color: $white;
     font-size: 50px;
   }
 }

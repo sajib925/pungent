@@ -11,10 +11,13 @@ function Services() {
       <Header />
       <HeroSection2 />
       <OurServices />
-      <Cta2 />
+      <Cta2
+        subTitle="So What is Next?"
+        title="Are You Ready? Let's get to work!"
+      />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Services

@@ -12,11 +12,11 @@
     &__quotes__icon {
       background: linear-gradient(
         to left top,
-        #ff2c9c,
-        #ff287b,
-        #ff395a,
-        #ff5137,
-        #ff6a00
+        $s-header,
+        $gradient2,
+        $gradient3,
+        $gradient4,
+        $gradient5
       );
       width: 70px;
       height: 70px;
@@ -34,14 +34,13 @@
       margin: 0 auto;
 
       &__my__swiper {
-        
       }
 
       &__description {
         margin: 0;
-        color: #18181b;
+        color: $header;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: $weight-semi-bold;
         font-style: italic;
       }
       &__bar {
@@ -51,11 +50,11 @@
         width: 2px;
         background: linear-gradient(
           to left top,
-          #ff2c9c,
-          #ff287b,
-          #ff395a,
-          #ff5137,
-          #ff6a00
+          $s-header,
+          $gradient2,
+          $gradient3,
+          $gradient4,
+          $gradient5
         );
       }
       &__title {
@@ -64,7 +63,7 @@
       }
       &__meta {
         display: block;
-        color: #646464;
+        color: $para;
         font-size: 14px;
       }
     }
