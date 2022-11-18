@@ -17,6 +17,5 @@
     "swiper": "^8.4.4"
   },
   "devDependencies": {
-    "eslint-config-next": "13.0.0"
   }
 }
