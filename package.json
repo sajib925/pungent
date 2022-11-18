@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "i": "^0.3.7",
@@ -18,7 +17,6 @@
     "swiper": "^8.4.4"
   },
   "devDependencies": {
-    "eslint": "8.26.0",
     "eslint-config-next": "13.0.0"
   }
 }
