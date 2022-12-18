@@ -1,6 +1,5 @@
 import About__us__section from "../components/AboutUs/About__us__section";
 import Blog_section from "../components/Blog_Section/Blog_section";
-import Partner__section from "../components/Client/Partner__section";
 import CTA__SECTION from "../components/CTA/CTA__SECTION";
 import Feedback_section from "../components/Feedback_section/Feedback_section";
 import Footer from "../components/Footer/Footer";
@@ -9,6 +8,7 @@ import Hero_section from "../components/Hero_section/Hero_section";
 import OurServices from "../components/OurServices/OurServices";
 import Our_works from "../components/Our_works/Our_works";
 import Our_work_process from "../components/Our_work_process/Our_work_process";
+import Partner__section from "../components/Partner/Partner__section";
 import Rating_section from "../components/Rating/Rating_section";
 import Team from "../components/Team/Team";
 

@@ -39,9 +39,21 @@
       &__description {
         margin: 0;
         color: $header;
-        font-size: 25px;
+        font-size: 15px;
         font-weight: $weight-semi-bold;
         font-style: italic;
+        @media ($tablet) {
+          font-size: 20px;
+          line-height: 32px;
+        }
+        @media ($desktop) {
+          font-size: 22px;
+          line-height: 38px;
+        }
+        @media ($large-screen) {
+          font-size: 25px;
+          line-height: 45px;
+        }
       }
       &__bar {
         position: relative;
@@ -58,13 +70,90 @@
         );
       }
       &__title {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 5px;
+        @media ($desktop) {
+           font-size: 20px;
+        }
       }
       &__meta {
         display: block;
         color: $para;
         font-size: 14px;
+      }
+    }
+  }
+
+  &__client {
+    display: none;
+    @media ($tablet) {
+      display: block;
+    }
+
+    &__img {
+      &:first-child {
+        bottom: 0;
+        right: 20%;
+        position: absolute;
+        display: none;
+        @media ($desktop) {
+          display: block;
+        }
+      }
+      &:nth-child(2) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media ($desktop) {
+          left: 25px;
+          top: 25px;
+        }
+      }
+      &:nth-child(3) {
+        position: absolute;
+        display: none;
+        @media ($desktop) {
+          display: block;
+          left: 17%;
+          top: 3%;
+        }
+      }
+      &:nth-child(4) {
+        position: absolute;
+        display: none;
+        @media ($desktop) {
+          display: block;
+          right: 18%;
+          top: 8%;
+        }
+      }
+      &:nth-child(5) {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      &:nth-child(6) {
+        position: absolute;
+        bottom: 3%;
+        left: 8%;
+      }
+      &:nth-child(7) {
+        position: absolute;
+        display: none;
+        @media ($desktop) {
+          display: block;
+          bottom: 5%;
+          left: 25%;
+        }
+      }
+      &:nth-child(8) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media ($desktop) {
+          right: 4%;
+          bottom: 13%;
+        }
       }
     }
   }

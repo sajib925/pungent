@@ -7,6 +7,9 @@ import {AiOutlineInstagram} from "react-icons/ai";
 import {ImFacebook} from "react-icons/im";
 import {ImTwitter} from "react-icons/im";
 import {TiSocialLinkedin} from "react-icons/ti";
+import {MdLocationPin} from "react-icons/md";
+import {TfiHeadphoneAlt} from "react-icons/tfi"
+import {CgMail} from "react-icons/cg"
 
 function Footer() {
   return (
@@ -58,15 +61,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Home
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Home
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -74,15 +76,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  About
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    About
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -90,15 +91,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Services
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Services
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -106,15 +106,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Portfolio
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Portfolio
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -122,15 +121,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Team
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Team
+                  </Link>
                 </li>
-                
               </ul>
             </div>
           </div>
@@ -148,16 +146,15 @@ function Footer() {
                     s.footer__section__row__col__content__footer__links__item
                   }
                 >
-                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Contact Us
-                </Link>
+                  <Link
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Contact Us
+                  </Link>
                 </li>
-               
 
                 <li
                   className={
@@ -165,16 +162,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Pricing
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Pricing
+                  </Link>
                 </li>
-
-                
 
                 <li
                   className={
@@ -182,15 +177,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Faq
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Faq
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -198,15 +192,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Privacy Policy
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Privacy Policy
+                  </Link>
                 </li>
-                
 
                 <li
                   className={
@@ -214,15 +207,14 @@ function Footer() {
                   }
                 >
                   <Link
-                  className={
-                    s.footer__section__row__col__content__footer__links__item__link
-                  }
-                  href="/"
-                >
-                  Terms & Conditions
-                </Link>
+                    className={
+                      s.footer__section__row__col__content__footer__links__item__link
+                    }
+                    href="/"
+                  >
+                    Terms & Conditions
+                  </Link>
                 </li>
-                
               </div>
             </div>
           </div>
@@ -232,9 +224,76 @@ function Footer() {
               <h3 className={s.footer__section__row__col__content__title}>
                 Get in Touch
               </h3>
-              <div
-                className={s.footer__section__row__col__content__address}
-              ></div>
+              <ul className={s.footer__section__row__col__content__address}>
+                <li
+                  className={
+                    s.footer__section__row__col__content__address__item
+                  }
+                >
+                  <MdLocationPin
+                    className={
+                      s.footer__section__row__col__content__address__item__icon
+                    }
+                  />
+                  2750 Quadra Street Victoria, Canada.
+                </li>
+                <li
+                  className={
+                    s.footer__section__row__col__content__address__item
+                  }
+                >
+                  <TfiHeadphoneAlt
+                    className={
+                      s.footer__section__row__col__content__address__item__icon
+                    }
+                  />
+                  <Link
+                    className={
+                      s.footer__section__row__col__content__address__item__link
+                    }
+                    href="/"
+                  >
+                    +324-9442-515
+                  </Link>
+                  <br/>
+                  <Link
+                    className={
+                      s.footer__section__row__col__content__address__item__link
+                    }
+                    href="/"
+                  >
+                    +324-9442-999
+                  </Link>
+                </li>
+                <li
+                  className={
+                    s.footer__section__row__col__content__address__item
+                  }
+                >
+                  <CgMail
+                    className={
+                      s.footer__section__row__col__content__address__item__icon
+                    }
+                  />
+                  <Link
+                    className={
+                      s.footer__section__row__col__content__address__item__link
+                    }
+                    href="/"
+                  >
+                    hello@pungent.com
+                  </Link>
+                  <br/>
+                  <Link
+                    className={
+                      s.footer__section__row__col__content__address__item__link
+                    }
+                    href="/"
+                  >
+                    support@pungent.com
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -242,8 +301,13 @@ function Footer() {
       <div className={s.footer__section__copyright__area}>
         <div className="container">
           <p className={s.footer__section__copyright__area__text}>
-            Copyright © 2022 Pungent. All Rights Reserved By 
-            <Link href="/" className={s.footer__section__copyright__area__text__link}>EnvyTheme</Link>
+            Copyright © 2022 Pungent. All Rights Reserved By
+            <Link
+              href="/"
+              className={s.footer__section__copyright__area__text__link}
+            >
+              EnvyTheme
+            </Link>
           </p>
         </div>
       </div>

@@ -70,7 +70,7 @@ function Header() {
                   <Link
                     className={
                       pathname === "/services"
-                        ? `${s.nav_link} ${s.nav_link_active} ${s.color}`
+                        ? `${s.nav_link} ${s.nav_link_active}`
                         : s.nav_link
                     }
                     href="/services"

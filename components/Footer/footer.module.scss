@@ -27,6 +27,7 @@
       @media ($desktop) {
         width: 25%;
       }
+      
 
       &__content {
         &__thumbnail {
@@ -110,6 +111,28 @@
                 opacity: 1;
                 visibility: visible;
               }
+            }
+          }
+        }
+        &__address {
+          &__item {
+            &__icon {
+              width: 35px;
+              height: 35px;
+              line-height: 35px;
+              color: #fff;
+              background: linear-gradient(
+                to left top,
+                #ff2c9c,
+                #ff287b,
+                #ff395a,
+                #ff5137,
+                #ff6a00
+              );
+              border-radius: 50%;
+              text-align: center;
+            }
+            &__link {
             }
           }
         }

@@ -1,8 +1,8 @@
 import React from 'react'
 import * as s from "./rating.module.scss"
-import {GiSelfLove} from "react-icons/gi";
+import {BsSuitHeart} from "react-icons/bs";
 import {GrDiamond} from "react-icons/gr";
-import {TfiBag} from "react-icons/tfi";
+import {BiBriefcase} from "react-icons/bi";
 
 function Rating_section() {
   return (
@@ -12,7 +12,7 @@ function Rating_section() {
           <div className={s.rating__section__cards__card}>
             <div className={s.rating__section__cards__card__content}>
               <span className={s.rating__section__cards__card__content__icon}>
-                <GiSelfLove size={60} />
+                <BsSuitHeart size={60} />
               </span>
               <h3 className={s.rating__section__cards__card__content__title}>
                 799
@@ -50,7 +50,7 @@ function Rating_section() {
           <div className={s.rating__section__cards__card}>
             <div className={s.rating__section__cards__card__content}>
               <span className={s.rating__section__cards__card__content__icon}>
-                <TfiBag size={60} />
+                <BiBriefcase size={60} />
               </span>
               <h3 className={s.rating__section__cards__card__content__title}>
                 990

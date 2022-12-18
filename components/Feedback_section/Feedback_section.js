@@ -118,44 +118,44 @@ function Feedback_section() {
           </div>
         </div>
       </div>
-      <div className={s.FeedBack_section__client}>
+      <div className={s.feedback__section__client}>
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img1}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img2}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img3}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img4}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img5}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img6}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img7}
           alt="client img"
         />
         <Image
-          className={s.FeedBack_section__client__img}
+          className={s.feedback__section__client__img}
           src={img8}
           alt="client img"
         />
