@@ -1,7 +1,7 @@
 import React from 'react'
 import * as s from "./rating.module.scss"
 import {BsSuitHeart} from "react-icons/bs";
-import {GrDiamond} from "react-icons/gr";
+import {IoDiamondOutline} from "react-icons/io5";
 import {BiBriefcase} from "react-icons/bi";
 
 function Rating_section() {
@@ -31,7 +31,7 @@ function Rating_section() {
           <div className={s.rating__section__cards__card}>
             <div className={s.rating__section__cards__card__content}>
               <span className={s.rating__section__cards__card__content__icon}>
-                <GrDiamond size={60} />
+                <IoDiamondOutline size={60} color="#ff2c9c" />
               </span>
               <h3 className={s.rating__section__cards__card__content__title}>
                 499

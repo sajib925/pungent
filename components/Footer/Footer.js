@@ -2,14 +2,14 @@ import React from "react";
 import * as s from "./footer.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../image/logo/logo.png"
+import logo from "../../image/logo/logo.png";
 import {AiOutlineInstagram} from "react-icons/ai";
 import {ImFacebook} from "react-icons/im";
 import {ImTwitter} from "react-icons/im";
 import {TiSocialLinkedin} from "react-icons/ti";
 import {MdLocationPin} from "react-icons/md";
-import {TfiHeadphoneAlt} from "react-icons/tfi"
-import {CgMail} from "react-icons/cg"
+import {TfiHeadphoneAlt} from "react-icons/tfi";
+import {CgMail} from "react-icons/cg";
 
 function Footer() {
   return (
@@ -224,74 +224,52 @@ function Footer() {
               <h3 className={s.footer__section__row__col__content__title}>
                 Get in Touch
               </h3>
-              <ul className={s.footer__section__row__col__content__address}>
-                <li
-                  className={
-                    s.footer__section__row__col__content__address__item
-                  }
-                >
-                  <MdLocationPin
-                    className={
-                      s.footer__section__row__col__content__address__item__icon
-                    }
-                  />
-                  2750 Quadra Street Victoria, Canada.
+
+              <ul className={s.footer__section__address}>
+                <li className={s.footer__section__address__item}>
+                  <span className={s.footer__section__address__item__icon}>
+                    <MdLocationPin size={20} />
+                  </span>
+                  <span className={s.footer__section__address__item__text}>2750 Quadra Street Victoria, Canada.</span>
                 </li>
-                <li
-                  className={
-                    s.footer__section__row__col__content__address__item
-                  }
-                >
-                  <TfiHeadphoneAlt
-                    className={
-                      s.footer__section__row__col__content__address__item__icon
-                    }
-                  />
-                  <Link
-                    className={
-                      s.footer__section__row__col__content__address__item__link
-                    }
-                    href="/"
-                  >
-                    +324-9442-515
-                  </Link>
-                  <br/>
-                  <Link
-                    className={
-                      s.footer__section__row__col__content__address__item__link
-                    }
-                    href="/"
-                  >
-                    +324-9442-999
-                  </Link>
+                <li className={s.footer__section__address__item}>
+                  <span className={s.footer__section__address__item__icon}>
+                    <TfiHeadphoneAlt size={16} />
+                  </span>
+                  <div className={s.footer__section__address__item__links}>
+                    <Link
+                      className={s.footer__section__address__item__links__link}
+                      href="/"
+                    >
+                      +324-9442-515
+                    </Link>
+                    <Link
+                      className={s.footer__section__address__item__links__link}
+                      href="#"
+                    >
+                      +324-9442-999
+                    </Link>
+                  </div>
                 </li>
-                <li
-                  className={
-                    s.footer__section__row__col__content__address__item
-                  }
-                >
-                  <CgMail
-                    className={
-                      s.footer__section__row__col__content__address__item__icon
-                    }
-                  />
-                  <Link
-                    className={
-                      s.footer__section__row__col__content__address__item__link
-                    }
-                    href="/"
-                  >
-                    hello@pungent.com
-                  </Link>
-                  <br/>
-                  <Link
-                    className={
-                      s.footer__section__row__col__content__address__item__link
-                    }
-                    href="/"
-                  >
-                    support@pungent.com
-                  </Link>
+                <li className={s.footer__section__address__item}>
+                  <span className={s.footer__section__address__item__icon}>
+                    <CgMail size={20} />
+                  </span>
+
+                  <div className={s.footer__section__address__item__links}>
+                    <Link
+                      className={s.footer__section__address__item__links__link}
+                      href="#"
+                    >
+                      hello@sajib.com
+                    </Link>
+                    <Link
+                      className={s.footer__section__address__item__links__link}
+                      href="#"
+                    >
+                      support@sajib.com
+                    </Link>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -306,7 +284,7 @@ function Footer() {
               href="/"
               className={s.footer__section__copyright__area__text__link}
             >
-              EnvyTheme
+              Sajib Ahmed
             </Link>
           </p>
         </div>
